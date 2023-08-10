@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #4E4958;
+
+  background-color: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  left: 0;
+  top: 0;
+  background-color: black;
+
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.page {
+  margin: auto;
+  width: 750px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  align-items: center;
+  margin-top: 106px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 36px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+header p{
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+
+form {
+  border-radius: 20px;
+
+  background-color: #fff;
+  min-height: 350px;
+
+  margin-top: 32px;
+  margin-bottom: 290px;
+  padding: 64px;
+}
+
+.tittle {
+  border: none;
+}
+
+.legend {
+  background-color: #2493C2;
+
+  border-radius: 20px 20px 0 0;
+
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding: 0 275px;
+
+  margin: -64px -64px 0;
+}
+
+.fieldset-wrapper, .fieldset-tittle, .fieldset-next-mentor {
+  color: #fff;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+fieldset input, select, textarea {
+  background-color: #FAFAFC;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  padding: 6px;
+
+  height: 55px;
+}
+
+.inform-name input, select {
+  width: 300px;
+}
+
+.inform-name {
+  display: flex;
+  gap: 22px;
+
+  margin-top: 15px;
+}
+
+.wrapper-input, .wrapper-input-textarea {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-top: 15px;
+}
+
+.wrapper-input span {
+  color: #C1BCCC;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wrapper-input span:hover {
+  color: #97939f;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper, .fieldset-next-mentor {
+  display: flex;
+  justify-content: center;
+  
+  color: #253B51;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E6E6F0;
+
+  padding-bottom: 8px;
+}
+
+.wrapper-input select {
+  appearance: none;
+}
+
+.wrapper-input-textarea {
+  margin-top: 32px;
+}
+
+.wrapper-input-textarea textarea {
+  height: 167px;
+}
+
+.checkbox-wrapper {
+  margin-top: 30px;
+
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1722_14)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1722_14'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.fieldset-next-mentor {
+  padding-bottom: 10px;
+  margin: 36px 0 34px; 
+}
+
+.col-3 {
+  display: flex;
+  appearance: none;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 300px;
+}
+
+.col-3 > div:nth-child(2) {
+  padding-left: 32px;
+  width: 172px;
+}
+
+.col-3 > div:nth-child(3) {
+  padding-left: 10px;
+  width: 150px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: #2493C2;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+
+  width: 100%;
+  height: 51px;
+
+  margin-top: 64px;
+}
